@@ -1,0 +1,9 @@
+package es.bearwav.game;
+
+public class Game {
+
+	private Player playerOne;
+	private Player playerTwo;
+	private Board board;
+	private ArrayList<Tile> pot;
+}

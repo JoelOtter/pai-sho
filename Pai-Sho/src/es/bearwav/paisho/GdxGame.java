@@ -10,6 +10,8 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
+import es.bearwav.game.Game;
+
 public class GdxGame implements ApplicationListener {
 	private OrthographicCamera camera;
 	private SpriteBatch batch;
@@ -20,6 +22,8 @@ public class GdxGame implements ApplicationListener {
 	public void create() {		
 		float w = Gdx.graphics.getWidth();
 		float h = Gdx.graphics.getHeight();
+		
+		Game g = new Game();
 		
 		camera = new OrthographicCamera(1, h/w);
 		batch = new SpriteBatch();

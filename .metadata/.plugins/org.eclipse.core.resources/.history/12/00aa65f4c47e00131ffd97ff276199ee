@@ -1,0 +1,5 @@
+package es.bearwav.game;
+
+public class Tile {
+
+}

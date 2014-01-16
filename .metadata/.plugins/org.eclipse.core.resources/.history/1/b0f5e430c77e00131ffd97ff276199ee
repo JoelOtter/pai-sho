@@ -1,0 +1,41 @@
+package es.bearwav.game;
+
+import java.util.ArrayList;
+
+import es.bearwav.game.tiles.Boat;
+import es.bearwav.game.tiles.Chrysanthemum;
+import es.bearwav.game.tiles.Dragon;
+import es.bearwav.game.tiles.Jade;
+import es.bearwav.game.tiles.Jasmine;
+import es.bearwav.game.tiles.Knotweed;
+import es.bearwav.game.tiles.Lily;
+import es.bearwav.game.tiles.Lotus;
+import es.bearwav.game.tiles.Rhododendron;
+import es.bearwav.game.tiles.Rose;
+import es.bearwav.game.tiles.Wheel;
+
+public class Player {
+	private ArrayList<Tile> tiles;
+	
+	public Player() {
+		tiles = new ArrayList<Tile>();
+		addTiles(3, "dragon");
+	}
+	
+	private void addTiles(int i, String type){
+		for (int j = 0; j < i; j++) {
+			if (type.equals("dragon")) tiles.add(new Dragon());
+			else if (type.equals("lotus")) tiles.add(new Lotus());
+			else if (type.equals("wheel")) tiles.add(new Wheel());
+			else if (type.equals("boat")) tiles.add(new Boat());
+			else if (type.equals("rock")) tiles.add(new Rock());
+			else if (type.equals("knotweed")) tiles.add(new Knotweed());
+			else if (type.equals("jasmine")) tiles.add(new Jasmine());
+			else if (type.equals("lily")) tiles.add(new Lily());
+			else if (type.equals("jade")) tiles.add(new Jade());
+			else if (type.equals("rose")) tiles.add(new Rose());
+			else if (type.equals("chrysanthemum")) tiles.add(new Chrysanthemum());
+			else if (type.equals("rhododendron")) tiles.add(new Rhododendron());
+		}
+	}
+}

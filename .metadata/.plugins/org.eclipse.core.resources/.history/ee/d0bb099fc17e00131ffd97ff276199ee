@@ -1,0 +1,9 @@
+package es.bearwav.game;
+
+public class Player {
+	private ArrayList<Tile> tiles;
+	
+	public Player() {
+		tiles = new ArrayList<Tile>();
+	}
+}
