@@ -1,7 +1,0 @@
-package es.bearwav.game.tiles.copy;
-
-import es.bearwav.game.Tile;
-
-public class Dragon extends Tile {
-
-}

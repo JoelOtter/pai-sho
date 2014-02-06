@@ -1,5 +1,0 @@
-package es.bearwav.game.tiles;
-
-public class Rock extends Tile {
-
-}
