@@ -43,9 +43,9 @@ public class Player {
 	public String toString() {
 		String output = "----------sss\n";
 		for (Tile t : tiles) {
-			output.concat(t.toString() + "\n");
+			output += t.toString() + "\n";
 		}
-		output.concat("----------");
+		output += "----------" ;
 		return output;
 	}
 }

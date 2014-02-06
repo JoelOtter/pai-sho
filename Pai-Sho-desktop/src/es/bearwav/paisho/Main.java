@@ -12,5 +12,15 @@ public class Main {
 		cfg.height = 320;
 		
 		new LwjglApplication(new GdxGame(), cfg);
+		
+		int count = 0;
+		for (int i = 0; i <= 18; i++) {
+			for (int j = 0; j <= 18; j++) {
+				if (Math.pow(i-9, 2) + Math.pow(j-9, 2) <= Math.pow(9, 2)) 
+					count++;
+			}
+		}
+		
+		System.out.println(count);
 	}
 }
